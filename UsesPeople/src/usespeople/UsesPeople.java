@@ -22,7 +22,8 @@ public class UsesPeople {
         cId = kbd.next();
 
         System.out.print("Name and Surname: ");
-        cNameSurname = kbd.next();
+        cNameSurname = kbd.nextLine();
+        cNameSurname = kbd.nextLine();
 
         System.out.print("Year born (eg.1996): ");
         cBirthYear = kbd.nextInt();
