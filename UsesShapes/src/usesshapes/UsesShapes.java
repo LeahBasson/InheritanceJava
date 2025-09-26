@@ -7,7 +7,7 @@ public class UsesShapes {
         Rectangle rect = new Rectangle(5, 6);
         System.out.println("Rectangle area: " + rect.area());
         
-        Box cube = new Box(2,2,2);
+        Box cube = new Box(3,3,3);
         System.out.println("Box area: " + cube.volume());
 
     }// end of main

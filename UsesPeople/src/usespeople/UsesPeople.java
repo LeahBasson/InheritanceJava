@@ -1,9 +1,12 @@
-package tut42;
+
+package usespeople;
 
 import java.util.Scanner;
 
-public class Tut42 {
 
+public class UsesPeople {
+
+    
     public static void main(String[] args) {
         // Read in values for person.
         Scanner kbd = new Scanner(System.in);
@@ -48,11 +51,13 @@ public class Tut42 {
 
         aStudent.setStudNr(cStudNr);
         aStudent.setBalance(cBalance);
+        aStudent.setId(cId);
+        aStudent.setNameSurname(cNameSurname);
+        aStudent.setBirthYear(cBirthYear);
         System.out.println("-----------------------------");
 
         System.out.println("Details of the new student");
         aStudent.displayDetails();
-
     }// end of main
-
+    
 }// end of class

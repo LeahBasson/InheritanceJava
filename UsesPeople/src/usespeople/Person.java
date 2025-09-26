@@ -1,4 +1,6 @@
-package tut42;
+
+package usespeople;
+
 
 public class Person {
     // attributes
@@ -52,5 +54,4 @@ public class Person {
     public String toString() {
         return "Person{" + "id=" + id + ", nameSurname=" + nameSurname + ", birthYear=" + birthYear + '}';
     }
-    
 }// end of class

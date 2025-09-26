@@ -1,9 +1,9 @@
 
-package tut42;
+package usespeople;
 
 
 public class Student extends Person{
-    // attributes
+   // attributes
     private long studNr;
     private double balance;
     
@@ -33,6 +33,9 @@ public class Student extends Person{
         return super.toString() + "Student{" + "studNr=" + studNr + ", balance=" + balance + '}';
     }
     
+    /**
+     *
+     */
     @Override
     public void displayDetails(){
         System.out.println("ID number: " + super.getId());
@@ -40,6 +43,5 @@ public class Student extends Person{
         System.out.println("Born in: " + super.getBirthYear());    
         System.out.println("Student number: " + this.studNr);
         System.out.println("Balance: " + this.balance);
-    }
-    
+    } 
 }// end of class
