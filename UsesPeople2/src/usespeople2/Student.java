@@ -1,4 +1,4 @@
-package usespeople;
+package usespeople2;
 
 public class Student extends Person {
     // attributes

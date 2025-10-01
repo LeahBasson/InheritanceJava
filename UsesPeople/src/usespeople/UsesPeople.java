@@ -1,12 +1,9 @@
-
 package usespeople;
 
 import java.util.Scanner;
 
-
 public class UsesPeople {
 
-    
     public static void main(String[] args) {
         // Read in values for person.
         Scanner kbd = new Scanner(System.in);
@@ -35,7 +32,8 @@ public class UsesPeople {
         aPerson.displayDetails();
         System.out.println("-----------------------------");
 
-        System.out.println("The person above had now registered to be a student.");
+        System.out.println(
+                "The person above had now registered to be a student.");
         System.out.println("-----------------------------");
 
         // aStudent
@@ -59,6 +57,8 @@ public class UsesPeople {
 
         System.out.println("Details of the new student");
         aStudent.displayDetails();
+
+        
     }// end of main
-    
+
 }// end of class
