@@ -14,8 +14,7 @@ public class Manager extends Employee{
     @Override
     public int getLeaveDays(){
         // annual leave days
-        int leaveDays = 18;
-        return leaveDays;
+        return super.getLeaveDays() + 3;
     }
     
     @Override

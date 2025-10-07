@@ -35,15 +35,13 @@ public class CompanyEmployees {
         double total = 0;
         double employeeSalary;
         double managerSalary;
-        double secretarySalary;
         double avg = 0;
 
         for (int i = 0; i < nrEmployees; i++) {
             employeeSalary = employee.getSalary();
             managerSalary = manager.getSalary();
-            secretarySalary = employee.getSalary();
 
-            total = employeeSalary + managerSalary + secretarySalary;
+            total = (employeeSalary * 2) + managerSalary;
             avg = total / 3;
         }
 
@@ -52,6 +50,16 @@ public class CompanyEmployees {
         System.out.println("----------------------------");
 
         // for each employee calculate how their leave will cost the company.
+        double empLeaveCost = (employee.getSalary()/261) * employee.getLeaveDays();
+        System.out.println("Employee leave cost: " + Math.round(empLeaveCost * 100.0)/100.0);
+        System.out.println("----------------------------");
+        
+        double manLeaveCost = (manager.getSalary()/261) * manager.getLeaveDays();
+        System.out.println("Manager leave cost: " + Math.round(manLeaveCost * 100.0)/100.0);
+        System.out.println("----------------------------");
+        System.out.println("Secretary leave cost: " + Math.round(empLeaveCost * 100.0)/100.0);
+        
+        
     }// end of main
 
 }// end of class
